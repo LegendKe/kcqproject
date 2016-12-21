@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/padding_left2right"
+    android:paddingRight="@dimen/padding_left2right"
+    android:paddingBottom="10dp"
+    android:background="@color/white">
+
+    <include layout="@layout/line_layout"/>
+    <com.djx.pin.myview.CircleImageView
+        android:id="@+id/avatar"
+       android:layout_marginTop="@dimen/padding_left2right"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/ic_defualtavater"
+        android:layout_marginRight="10dp"/>
+        <TextView
+            android:id="@+id/tv_nickname"
+            style="@style/content_text"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@+id/avatar"
+            android:gravity="center_vertical"
+            android:text=""
+            android:layout_marginTop="@dimen/padding_left2right"
+            />
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text=""
+            android:textColor="@color/text_color_normal"
+            android:layout_toRightOf="@+id/avatar"
+            android:layout_below="@+id/tv_nickname"
+            android:gravity="center_vertical"
+            android:textSize="13sp" />
+    <TextView
+        style="@style/text_content_30_black"
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/avatar"
+        android:text=""
+        android:layout_below="@+id/avatar"/>
+</RelativeLayout>

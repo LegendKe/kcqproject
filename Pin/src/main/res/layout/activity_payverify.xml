@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.djx.pin.activity.PayVerifyActivity">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        style="@style/title">
+
+        <LinearLayout
+            android:id="@+id/ll_back"
+            style="@style/button_selector"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_back" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/img_Title_CivilizationDetail"
+            style="@style/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="验证手机号" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/margin_left2right"
+        android:layout_marginRight="@dimen/margin_left2right"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/content_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="手机号" />
+
+        <TextView
+            android:id="@+id/tv_phoneNumber"
+            style="@style/content_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40dp"
+            android:gravity="center_vertical"
+            android:inputType="number"
+            android:maxLength="11"
+            android:text="15556985881" />
+
+    </LinearLayout>
+
+    <View style="@style/style_view_line" />
+
+    <LinearLayout
+        android:id="@+id/ll_ChangePassWord_AASA"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/margin_left2right"
+        android:layout_marginRight="@dimen/margin_left2right"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/content_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="验证码" />
+
+        <EditText
+            android:id="@+id/edt_Code"
+            style="@style/content_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:hint="请输入验证码"
+            android:inputType="number" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <View
+                android:layout_width="0.8dp"
+                android:layout_height="match_parent"
+                android:background="@color/line_color"/>
+            <TextView
+                android:id="@+id/tv_SendCode"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:textSize="11sp"
+                android:gravity="center"
+                android:text="发送验证码"
+                android:textColor="@color/text_color_focused" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View style="@style/style_view_line" />
+
+
+    <Button
+        android:id="@+id/bt_paybalance"
+        android:layout_marginTop="30dp"
+        android:text="@string/bt_confirm1"
+        style="@style/button_background_round_full"
+        android:layout_marginRight="@dimen/margin_left2right"
+        android:layout_marginLeft="@dimen/margin_left2right"/>
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="40dp" />
+</LinearLayout>

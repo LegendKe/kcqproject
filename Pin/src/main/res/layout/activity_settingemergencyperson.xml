@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/title"
+            style="@style/title">
+
+            <LinearLayout
+                android:id="@+id/ll_Back_SEPA"
+                style="@style/button_selector"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/ic_back" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/img_Title_CivilizationDetail"
+                style="@style/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="设置紧急联系人" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_28px_hint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text="我们会在您可能遇险时，即时通过平台发起紧急求助,同时通过短信快速通知您的紧急联系人。请一定要设置同城靠谱的朋友。" />
+
+            <Button
+                android:id="@+id/bt_FromAddressBook_SEPA"
+                style="@style/button_background_round_full"
+                android:layout_width="150dp"
+                android:layout_marginTop="30dp"
+                android:text="从通讯录选择"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edt_EmergencyName_SEPA"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@color/white"
+                    android:textSize="16sp"
+                    android:hint="紧急联系人的姓名" />
+             <include layout="@layout/line_layout"/>
+
+                <EditText
+                    android:id="@+id/edt_EmergencyPhone_SEPA"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="0.5dp"
+                    android:textSize="16sp"
+                    android:background="@color/white"
+                    android:hint="紧急联系人的手机号码"
+                    android:inputType="number"
+                    android:maxLength="11" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_Inform_SEPA"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/ic_settingemergency" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="通知 Ta"
+                    android:textColor="@color/text_color_focused"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_Complete_SEPA"
+                style="@style/button_background_round_full"
+                android:layout_marginTop="30dp"
+                android:text="完成"
+                android:layout_marginLeft="@dimen/margin_left2right"
+                android:layout_marginRight="@dimen/margin_left2right"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_parentCover_SEPA"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/ll_parent_cover"
+        android:visibility="gone"></View>
+</RelativeLayout>

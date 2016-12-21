@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/margin_left2right"
+    android:paddingRight="@dimen/margin_left2right"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_01">
+
+        <com.djx.pin.myview.CircleImageView
+            android:id="@+id/img_portrait"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/ic_defualtavater" />
+
+
+        <TextView
+            android:id="@+id/tv_NickName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img_portrait"
+            android:ellipsize="end"
+            style="@style/text_28px_black"
+            android:text="name" />
+        <TextView
+            android:id="@+id/tv_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:focusable="false"
+            android:text="2016-7-27"
+            style="@style/text_24px_hint"
+            android:layout_below="@+id/tv_NickName"
+            android:layout_toRightOf="@+id/img_portrait"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="8dp"/>
+
+
+        <RelativeLayout
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:clickable="false"
+            android:focusable="false"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_img_reward"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:src="@mipmap/ic_reward" />
+
+            <RelativeLayout
+                android:id="@+id/rl_02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/iv_img_reward"
+                android:layout_marginLeft="5dp">
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:clickable="false"
+                    android:text=""
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_focused"
+                    android:textSize="18sp"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_viewNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/rl_02"
+                android:clickable="false"
+                android:focusable="false"
+                android:text="100次浏览"
+                style="@style/text_24px_hint"
+                android:paddingTop="8dp"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_description"
+        style="@style/text_28px_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:maxLines="5"
+        android:text="content"
+        android:layout_below="@+id/rl_01"/>
+
+</RelativeLayout>

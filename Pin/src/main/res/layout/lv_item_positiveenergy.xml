@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?attr/selectableItemBackground"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="@dimen/space_8"
+            android:paddingTop="@dimen/space_8">
+            <com.djx.pin.myview.CircleImageView
+                android:id="@+id/cimg_Avatar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/ic_defualtavater" />
+            <TextView
+                android:id="@+id/tv_UserName"
+                style="@style/textview_nickname"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/cimg_Avatar"
+                android:gravity="center_vertical"
+                android:text="" />
+            <TextView
+                android:id="@+id/tv_Time"
+                style="@style/text_24px_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_below="@+id/tv_UserName"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/cimg_Avatar"
+                android:gravity="center_vertical"
+                android:text="4小时前" />
+            <TextView
+                android:id="@+id/tv_description"
+                style="@style/text_content_30_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cimg_Avatar"
+                android:maxLines="3"
+                android:text=""
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"/>
+            <com.djx.pin.widget.NineGridLayout
+                android:id="@+id/imgs_9grid_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_description"
+                android:layout_marginBottom="8dp"
+                />
+            <ImageView
+                android:id="@+id/iv_oneimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:maxHeight="@dimen/space_200"
+                android:layout_below="@+id/tv_description"
+                android:layout_marginBottom="8dp"/>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
+
+

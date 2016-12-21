@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/title"
+    android:paddingLeft="@dimen/margin_left2right"
+    android:paddingRight="@dimen/margin_left2right">
+
+
+    <ImageView
+        android:id="@+id/iv_user_action_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/user" />
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_centerInParent="true">
+    <TextView
+        android:id="@+id/tv_title_action_bar"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="网络悬赏"
+        android:clickable="false"/>
+    <TextView
+        android:id="@+id/tv_title2_action_bar"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="线下悬赏"
+        android:gravity="center"/>
+
+</LinearLayout>
+</RelativeLayout>

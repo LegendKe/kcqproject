@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?attr/selectableItemBackground">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/space_8"
+                android:paddingTop="@dimen/space_8"
+                android:paddingLeft="@dimen/padding_left2right"
+                android:paddingRight="@dimen/padding_left2right">
+
+                <com.djx.pin.myview.CircleImageView
+                    android:id="@+id/img_portrait"
+                    style="@style/avatar_imageview_50x50" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space_8"
+                    android:layout_toRightOf="@+id/img_portrait">
+
+                    <TextView
+                        android:id="@+id/tv_userName"
+                        style="@style/textview_nickname"
+                        android:paddingBottom="@dimen/space_8"
+                        android:text="userName" />
+
+                    <TextView
+                        android:id="@+id/tv_time"
+                        style="@style/textview_12sp_hint"
+                        android:layout_below="@+id/tv_userName"
+                        android:text="2016-7-27" />
+                    <TextView
+                        android:id="@+id/tv_viewNum"
+                        style="@style/textview_12sp_hint"
+                        android:layout_below="@+id/tv_userName"
+                        android:layout_alignParentRight="true"
+                        android:text="100次浏览"
+                        />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_order_closed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已关闭"
+                    android:textColor="@color/text_color_focused"
+                    android:textSize="15sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/space_6"
+                    android:visibility="invisible"/>
+
+                    <TextView
+                        android:id="@+id/tv_price"
+                        style="@style/textview_money_reward"
+                        android:layout_marginLeft="@dimen/size_6"
+                        android:singleLine="true"
+                        android:layout_alignParentRight="true"
+                        android:text="33333"
+                        android:drawableLeft="@mipmap/ic_reward"
+                        android:drawablePadding="5dp"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_description"
+                style="@style/text_content_30_black"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:maxLines="5"
+                android:text="内容"
+                android:paddingLeft="@dimen/padding_left2right"
+                android:paddingRight="@dimen/padding_left2right"
+                android:layout_marginTop="8dp"/>
+
+            <com.djx.pin.widget.NineGridLayout
+                android:id="@+id/imgs_9grid_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:visibility="gone"
+                />
+        <!--    <ImageView
+                android:id="@+id/iv_oneimage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_200"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="@dimen/padding_left2right"
+                android:layout_marginRight="@dimen/padding_left2right" />-->
+
+            <com.djx.pin.myview.timepicker.common.ResizableImageView
+                android:id="@+id/iv_oneimage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="@dimen/padding_left2right"
+                android:layout_marginRight="@dimen/padding_left2right" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray"
+                android:layout_marginTop="8dp"/>
+            <include layout="@layout/slector_share_comment_chat"></include>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical">
+
+    <View style="@style/style_view_line" />
+
+    <RadioGroup
+        android:id="@+id/rg_distance"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rb_near"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:button="@drawable/selector_radiobutton_helppeople"
+            android:padding="15dp"
+            android:text="  附近"
+            style="@style/content_text"  />
+
+        <RadioButton
+            android:id="@+id/rb_3km"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.5dp"
+            android:background="@color/white"
+            android:button="@drawable/selector_radiobutton_helppeople"
+            android:padding="15dp"
+            android:text="  3km"
+            style="@style/content_text"  />
+
+        <RadioButton
+            android:id="@+id/rb_5km"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.5dp"
+            android:background="@color/white"
+            android:button="@drawable/selector_radiobutton_helppeople"
+            android:padding="15dp"
+            android:text="  5km"
+            style="@style/content_text"  />
+
+        <RadioButton
+            android:id="@+id/rb_10km"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.5dp"
+            android:background="@color/white"
+            android:button="@drawable/selector_radiobutton_helppeople"
+            android:padding="15dp"
+            android:text="  10km"
+            style="@style/content_text" />
+        <RadioButton
+            android:id="@+id/rb_50km"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.5dp"
+            android:background="@color/white"
+            android:button="@drawable/selector_radiobutton_helppeople"
+            android:padding="15dp"
+            android:clickable="false"
+            android:text="  50km"
+            style="@style/content_text"
+            android:visibility="gone"/>
+    </RadioGroup>
+
+    <View style="@style/style_view_line" />
+</LinearLayout>
+

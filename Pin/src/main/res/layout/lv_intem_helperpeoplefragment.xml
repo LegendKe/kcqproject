@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?attr/selectableItemBackground">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingLeft="@dimen/margin_left2right"
+            android:paddingRight="@dimen/margin_left2right"
+            android:paddingTop="8dp">
+
+            <com.djx.pin.myview.CircleImageView
+                android:id="@+id/img_portrait"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/ic_defualtavater"
+                android:layout_marginRight="10dp"/>
+
+
+            <TextView
+                android:id="@+id/tv_userName"
+                style="@style/text_32px_black"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginBottom="5dp"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:text="userName"
+                android:layout_toLeftOf="@+id/tv_price"
+                android:layout_toRightOf="@+id/img_portrait"/>
+
+
+            <TextView
+                android:id="@+id/tv_address"
+                style="@style/text_24px_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_userName"
+                android:drawableLeft="@mipmap/ic_location"
+                android:drawablePadding="5dp"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:text=""
+                android:layout_toRightOf="@+id/img_portrait"
+                />
+
+            <TextView
+                android:id="@+id/tv_distance"
+                style="@style/text_24px_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_userName"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tv_address"
+                android:layout_toLeftOf="@+id/tv_start_time"
+                android:singleLine="true"/>
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:drawableLeft="@mipmap/ic_reward"
+                android:drawablePadding="5dp"
+                android:singleLine="true"
+                android:textColor="@color/text_color_focused"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_start_time"
+                style="@style/text_24px_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tv_price"
+                android:layout_marginTop="5dp"
+                android:text="2016-7-27" />
+
+            <TextView
+                android:id="@+id/tv_description"
+                style="@style/text_content_30_black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_portrait"
+                android:layout_marginTop="8dp"
+                android:maxLines="2"
+                android:text="" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
+

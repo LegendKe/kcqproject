@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="60dp"
+    android:layout_height="60dp">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/ic_map_marker"
+        />
+    <com.djx.pin.myview.CircleImageView
+        android:id="@+id/cir_ava"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_defualtavater"
+        android:layout_marginTop="3.2dp"/>
+</RelativeLayout>

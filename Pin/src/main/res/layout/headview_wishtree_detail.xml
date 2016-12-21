@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_left2right"
+        android:layout_marginRight="@dimen/padding_left2right"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginBottom="5dp">
+        <com.djx.pin.myview.CircleImageView
+            android:id="@+id/headview_iv_avatar"
+            style="@style/avatar_imageview_50x50"
+            android:layout_centerVertical="true" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/headview_iv_avatar"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/headview_tv_userName"
+                style="@style/textview_nickname"
+                android:text="" />
+            <TextView
+                android:id="@+id/headview_tv_time"
+                style="@style/textview_time"
+                android:layout_below="@+id/headview_tv_userName"
+                android:layout_marginTop="5dp"
+                android:text="" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_content"
+        style="@style/textview_subtitle"
+        android:paddingLeft="@dimen/padding_left2right"
+        android:paddingRight="@dimen/padding_left2right"
+        android:textIsSelectable="true"
+        android:layout_marginBottom="5dp"/>
+
+    <com.djx.pin.widget.NineGridLayout
+        android:id="@+id/imgs_9grid_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_left2right"
+        android:layout_marginRight="@dimen/padding_left2right">
+    </com.djx.pin.widget.NineGridLayout>
+
+    <TextView
+        android:id="@+id/tv_location"
+        style="@style/textview_14sp_hint"
+        android:layout_marginLeft="@dimen/padding_left2right"
+        android:layout_marginRight="@dimen/padding_left2right"
+        android:drawableLeft="@mipmap/ic_location"
+        android:drawablePadding="5dp"
+        android:singleLine="true"
+        android:text=""
+        android:layout_marginTop="@dimen/padding_left2right"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/gray"
+        android:layout_marginTop="5dp"/>
+
+</LinearLayout>

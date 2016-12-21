@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        style="@style/title">
+
+        <LinearLayout
+            android:id="@+id/ll_Back_MHDA"
+            style="@style/button_selector"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_back" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/img_Title_LifeRewardDetail"
+            style="@style/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="任务进度" />
+        <!--complaint 申诉-->
+        <TextView
+            android:id="@+id/tv_StopTask_MHDA"
+            style="@style/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_left2right"
+            android:gravity="center"
+            android:text="申诉" />
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/detail_headview"></include>
+
+                <com.djx.pin.widget.NineGridLayout
+                    android:id="@+id/imgs_9grid_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/padding_left2right">
+                </com.djx.pin.widget.NineGridLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="@color/gray"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="订单状态"
+                        android:textColor="@color/text_color_focused"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:id="@+id/img_TaskState_MHDA"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginBottom="@dimen/margin_left2right"
+                        android:layout_marginLeft="45dp"
+                        android:layout_marginRight="45dp"
+                        android:layout_marginTop="@dimen/margin_left2right"
+                        android:src="@mipmap/task_progress_4dot_01" />
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_rewarddetailoffline01"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_TaskGrab_MHDA"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="抢单"
+                            android:textColor="@color/text_color_focused"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_TaskDo_MHDA"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="被指定"
+                            android:textColor="@color/text_color_normal"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_TaskComplete_MHDA"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="完成等赏"
+                            android:textColor="@color/text_color_normal"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_TaskRewardMoney"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="获得赏金"
+                            android:textColor="@color/text_color_normal"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_QiangDanCount_MHDA"
+                    style="@style/text_28px_light_black"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/gray"
+                    android:paddingLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:text="共有0人抢单" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="@dimen/margin_left2right"
+                android:layout_marginRight="@dimen/margin_left2right"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.djx.pin.myview.CircleImageView
+                    android:id="@+id/cimg_Avatar"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/ic_defualtavater" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_left2right"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_NickName_MHDA"
+                        style="@style/content_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/tv_Time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/tv_NickName_MHDA"
+                        android:layout_marginLeft="@dimen/margin_left2right"
+                        android:layout_toRightOf="@id/tv_NickName_MHDA"
+                        android:text=""
+                        android:textColor="@color/gray1"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tv_appealdetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/tv_NickName_MHDA"
+                        android:singleLine="true"
+                        android:text="发单人对您的服务不满意,您可进行申诉"
+                        android:textColor="@color/text_color_normal"
+                        android:textSize="13sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tv_Location_MHDA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_NickName_MHDA"
+                        android:layout_marginTop="10dp"
+                        android:text=""
+                        android:textColor="@color/text_color_normal"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+                <LinearLayout
+
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_left2right"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/bt_TaskSource_MHDA"
+                        android:layout_width="20dp"
+                        android:layout_height="36dp"
+                        android:layout_gravity="right"
+                        android:background="@mipmap/ic_tasksource"
+                        android:text="溯源"
+                        android:textColor="@color/white"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bt_GiveUp"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="@color/gray2"
+                    android:text="放弃任务"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/bt_Complete"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="@dimen/margin_left2right"
+                    android:layout_toRightOf="@id/bt_GiveUp"
+                    android:background="@color/blue"
+                    android:text="完成任务"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/bt_shensu"
+                    style="@style/button_background_round"
+                    android:layout_width="200dp"
+                    android:text="申诉"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

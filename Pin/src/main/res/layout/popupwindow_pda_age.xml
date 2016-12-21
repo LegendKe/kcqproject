@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical">
+    <TextView
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="请选择日期"
+        android:textSize="18sp"
+        android:textColor="@color/text_color_black"
+        />
+    <DatePicker
+        android:background="@color/white"
+        android:layout_marginTop="0.5dp"
+        android:id="@+id/dp_PDA_Pop_Birthday"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:calendarViewShown="false"
+        android:headerBackground="@color/blue"
+        android:yearListSelectorColor="@color/blue"
+        >
+    </DatePicker>
+
+    <TextView
+        android:id="@+id/tv_PDA_Pop_Birthday_Yes"
+        android:background="@color/white"
+        android:layout_marginTop="0.5dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="确定"
+        android:textSize="18sp"
+        android:textColor="@color/text_color_black"
+        />
+</LinearLayout>

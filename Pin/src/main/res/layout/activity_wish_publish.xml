@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/title">
+        <TextView
+            android:id="@+id/tv_cance"
+            style="@style/textview_title"
+            android:paddingLeft="@dimen/padding_left2right"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="取消" />
+        <TextView
+            style="@style/textview_title"
+            android:layout_centerInParent="true"
+            android:text="愿望树" />
+        <TextView
+            android:id="@+id/tv_send"
+            style="@style/textview_title"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/padding_left2right"
+            android:text="发送" />
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/et_content"
+        style="@style/content_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="8"
+        android:background="@null"
+        android:hint="@string/civilization_i_want_say"
+        android:maxLength="300"
+        android:gravity="top|start"
+        android:layout_marginLeft="@dimen/padding_left2right"
+        android:layout_marginRight="@dimen/padding_left2right"
+        android:layout_marginTop="10dp"
+        />
+    <com.djx.pin.widget.MyRecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_left2right"
+        ></com.djx.pin.widget.MyRecyclerView>
+    <include layout="@layout/line_layout"/>
+    <TextView
+        android:id="@+id/tv_location"
+        style="@style/content_text"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:drawableRight="@mipmap/ic_right"
+        android:drawableLeft="@mipmap/ic_location"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:text="地点"
+        android:layout_marginLeft="@dimen/padding_left2right"
+        android:layout_marginRight="@dimen/padding_left2right"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray"/>
+
+</LinearLayout>

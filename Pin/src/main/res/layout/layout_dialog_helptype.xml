@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp">
+
+    <Button
+        android:id="@+id/bt_net_help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shap_solid_white_m_up"
+        android:textSize="20sp"
+        android:textColor="@color/blue"
+        android:text="@string/bt_net_help"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray"/>
+    <Button
+        android:id="@+id/bt_real_help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:background="@drawable/shap_solid_white_m_down"
+        android:textColor="@color/blue"
+        android:text="@string/bt_real_help"/>
+    <Button
+        android:id="@+id/bt_cancle"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:background="@drawable/shap_solid_white_m"
+        android:textColor="@color/blue"
+        android:text="@string/bt_cancle"/>
+
+</LinearLayout>
+

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#dfdfdf"
+    android:gravity="center_vertical"
+    android:layout_alignParentBottom="true"
+    android:paddingLeft="@dimen/margin_left2right"
+    android:paddingRight="@dimen/margin_left2right">
+
+    <RelativeLayout
+        android:id="@+id/rl_navigation_01"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            style="@style/text_32px_light_black"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="仲裁"
+            android:drawableLeft="@mipmap/ic_arbitrament"
+            android:gravity="center"
+            android:drawablePadding="5dp"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="0.8dp"
+        android:layout_height="30dp"
+        android:background="#aaa"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_navigation_02"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            style="@style/text_32px_light_black"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="申诉"
+            android:drawableLeft="@mipmap/ic_appeal"
+            android:gravity="center"
+            android:drawablePadding="5dp"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="0.8dp"
+        android:layout_height="30dp"
+        android:background="#aaa"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_navigation_03"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            style="@style/text_32px_light_black"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="私信"
+            android:drawableLeft="@mipmap/ic_chat"
+            android:gravity="center"
+            android:drawablePadding="5dp"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

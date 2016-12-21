@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/detail_headview"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+        <com.djx.pin.widget.NineGridLayout
+            android:id="@+id/imgs_9grid_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           >
+        </com.djx.pin.widget.NineGridLayout>
+    </LinearLayout>
+
+    <include layout="@layout/item_pined_location2image"></include>
+
+    <include layout="@layout/detail_headview_comment"></include>
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/margin_left2right"
+    android:paddingRight="@dimen/margin_left2right"
+    android:id="@+id/headview_rl_location"
+    android:background="@color/white">
+
+
+    <TextView
+        android:id="@+id/tv_Location_LifeRewardDetail"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/rl_headview"
+        android:drawableLeft="@mipmap/ic_location"
+        android:drawablePadding="5dp"
+        android:singleLine="true"
+        android:text=""
+        style="@style/text_28px_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_headview"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/tv_pin_word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="PIN过"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_avatar_pin"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/tv_pin_word"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" />
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="2dp"
+            android:layout_toLeftOf="@+id/ll_avatar_pin"
+            android:text="被"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

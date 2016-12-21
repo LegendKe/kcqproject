@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/margin_left2right">
+
+            <com.djx.pin.myview.CircleImageView
+                android:id="@+id/cimg_Avatar_MHDA"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/ic_defualtavater" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/cimg_Avatar_MHDA"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_UserName_MHDA"
+                    style="@style/text_32px_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_Time_MHDA"
+                    style="@style/textview_time"
+                    android:layout_marginTop="5dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <include layout="@layout/line_layout" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray"
+            android:paddingBottom="@dimen/space_5"
+            android:paddingLeft="@dimen/margin_left2right"
+            android:paddingTop="@dimen/space_5"
+            android:text="失踪儿童信息" />
+
+        <include layout="@layout/line_layout" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/margin_left2right"
+            android:layout_marginRight="@dimen/margin_left2right"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/textview_subtitle"
+                android:text="姓名:" />
+
+            <TextView
+                android:id="@+id/tv_Name_LCDA"
+                style="@style/textview_subtitle"
+                android:layout_marginLeft="10dp" />
+
+
+            <TextView
+                style="@style/textview_subtitle"
+                android:layout_marginLeft="40dp"
+                android:text="姓别:" />
+
+            <TextView
+                android:id="@+id/tv_Sex_LCDA"
+                style="@style/textview_subtitle"
+                android:layout_marginLeft="10dp" />
+
+        </LinearLayout>
+
+        <!--  <include layout="@layout/line_layout" />-->
+
+        <ImageView
+            android:id="@+id/iv_child_avatar"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="@dimen/space_5"
+            android:layout_marginLeft="@dimen/margin_left2right"
+            android:layout_marginTop="@dimen/space_5"
+            android:scaleType="centerCrop"
+            android:visibility="gone" />
+
+        <include layout="@layout/line_layout" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingRight="@dimen/margin_left2right"
+            android:paddingLeft="@dimen/margin_left2right">
+
+            <TextView
+                style="@style/content_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="失踪时间:" />
+
+            <TextView
+                android:id="@+id/tv_LostTime_LCDA"
+                style="@style/content_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp" />
+
+        </LinearLayout>
+
+        <include layout="@layout/line_layout" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingRight="@dimen/margin_left2right"
+            android:paddingLeft="@dimen/margin_left2right">
+
+            <TextView
+                style="@style/content_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="失踪时地点:" />
+
+            <TextView
+                android:id="@+id/tv_LostPlace_LCDA"
+                style="@style/content_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="" />
+
+        </LinearLayout>
+
+        <include layout="@layout/line_layout" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/content_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="手机号:" />
+
+            <TextView
+                android:id="@+id/tv_LostPhone_LCDA"
+                style="@style/content_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/blue"
+                android:text="" />
+
+        </LinearLayout>
+
+        <include layout="@layout/line_layout" />
+
+
+        <TextView
+            style="@style/textview_subtitle"
+            android:layout_marginLeft="@dimen/margin_left2right"
+            android:layout_marginRight="@dimen/margin_left2right"
+            android:layout_marginTop="@dimen/space_5"
+            android:text="内容详情:" />
+
+        <TextView
+            android:id="@+id/tv_Description_LCDA"
+            style="@style/textview_subtitle"
+            android:layout_marginLeft="@dimen/margin_left2right"
+            android:layout_marginRight="@dimen/margin_left2right"
+            android:layout_marginTop="@dimen/space_5"
+            android:textIsSelectable="true"/>
+
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="60dp"
+            android:paddingRight="@dimen/margin_left2right"
+            android:paddingLeft="@dimen/margin_left2right">
+
+            <LinearLayout
+                android:id="@+id/ll_child_images"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_margin="@dimen/margin_left2right"
+                android:orientation="horizontal"></LinearLayout>
+
+        </HorizontalScrollView>
+
+
+        <!--  <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/gray"
+              android:paddingBottom="@dimen/space_5"
+              android:paddingLeft="@dimen/margin_left2right"
+              android:paddingTop="@dimen/space_5"
+              android:layout_marginTop="20dp"
+              android:text="负责民警" />
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:gravity="center_vertical"
+              android:orientation="horizontal">
+
+              <TextView
+                  style="@style/textview_subtitle"
+                  android:layout_marginLeft="20dp"
+                  android:text="姓名:" />
+
+              <TextView
+                  android:id="@+id/tv_police_name"
+                  style="@style/textview_subtitle"
+                  android:layout_marginLeft="10dp"
+                  />
+          </LinearLayout>
+
+          <include layout="@layout/line_layout" />
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:gravity="center_vertical"
+              android:orientation="horizontal">
+
+              <TextView
+                  style="@style/textview_subtitle"
+                  android:layout_marginLeft="20dp"
+                  android:text="联系方式:" />
+
+              <TextView
+                  android:id="@+id/tv_police_phone"
+                  style="@style/textview_subtitle"
+                  android:layout_marginLeft="10dp"
+                  />
+          </LinearLayout>
+
+          <include layout="@layout/line_layout" />
+
+          <TextView
+              style="@style/textview_subtitle"
+              android:layout_marginLeft="@dimen/margin_left2right"
+              android:layout_marginRight="@dimen/margin_left2right"
+              android:layout_marginTop="@dimen/space_5"
+              android:text="结案详情:" />
+
+          <TextView
+              android:id="@+id/tv_closeCase_detail"
+              style="@style/textview_subtitle"
+              android:layout_marginLeft="@dimen/margin_left2right"
+              android:layout_marginRight="@dimen/margin_left2right"
+              android:layout_marginTop="@dimen/space_5"
+              />
+  -->
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="space_200">480px</dimen>
+    <dimen name="nickname">18sp</dimen>
+    <dimen name="padding_left2right">36px</dimen>
+</resources>

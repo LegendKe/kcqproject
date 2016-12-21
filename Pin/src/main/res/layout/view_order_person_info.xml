@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginLeft="@dimen/margin_left2right"
+    android:layout_marginRight="@dimen/margin_left2right"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <com.djx.pin.myview.CircleImageView
+        android:id="@+id/cimg_Avatar"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@mipmap/ic_defualtavater" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margin_left2right"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_NickName_MHDA"
+            style="@style/content_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="小明" />
+
+        <TextView
+            android:id="@+id/tv_Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_NickName_MHDA"
+            android:layout_marginLeft="@dimen/margin_left2right"
+            android:layout_toRightOf="@id/tv_NickName_MHDA"
+            android:text="2016-8-13"
+            android:textColor="@color/gray1"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_appealdetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_NickName_MHDA"
+            android:singleLine="true"
+            android:text="发单人对您的服务不满意,您可进行申诉"
+            android:textColor="@color/text_color_normal"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_Location_MHDA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_NickName_MHDA"
+            android:layout_marginTop="@dimen/margin_left2right"
+            android:text="合肥肥西"
+            android:textColor="@color/text_color_normal"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margin_left2right"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/bt_TaskSource_MHDA"
+            android:layout_width="10dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right"
+            android:background="@mipmap/ic_tasksource"
+            android:text="溯源"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

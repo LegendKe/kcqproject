@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="@dimen/margin_left2right"
+        android:layout_marginRight="@dimen/margin_left2right"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.djx.pin.myview.CircleImageView
+            android:id="@+id/cimg_Avatar_MHDA"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/ic_defualtavater" />
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_NickName_MHDA"
+                style="@style/content_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="小明"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_Location_MHDA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="合肥肥西"
+                android:textColor="@color/text_color_normal"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_TaskState_MHDA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="正在服务"
+                android:textColor="@color/text_color_focused"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/bt_TaskSource_MHDA"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right"
+                android:background="@mipmap/ic_tasksource"
+                android:text="溯源"
+                android:textColor="@color/white"
+
+                android:textSize="13sp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+                <TextView
+                    android:id="@+id/tv_TaskFunction_MHDA"
+                    style="@style/content_text"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:padding="7dp"
+                    android:background="@drawable/shape_bt_bule"
+                    android:gravity="center"
+                    android:textColor="@color/text_color_blue"
+                    android:text="取消订单" />
+                <TextView
+                    android:id="@+id/tv_shensu"
+                    style="@style/content_text"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:padding="7dp"
+                    android:background="@drawable/shape_bt_bule"
+                    android:gravity="center"
+                    android:textColor="@color/text_color_blue"
+                    android:text="申诉"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@android:id/background">//定义的是背景色
+        <shape>
+            <corners android:radius="20dip" />
+            <gradient
+                android:angle="270"
+                android:centerColor="#efefef"
+                android:centerY="0.75"
+                android:endColor="#efefef"
+                android:startColor="#efefef" />
+        </shape>
+    </item>
+
+    <item android:id="@android:id/progress">//这个是定义1级进度，如果1级进度比2级进度大且1级进度不透明，就可以覆盖掉2级进度
+        <clip>
+            <shape>
+                <corners android:radius="20dip" />
+                <gradient
+                    android:angle="270"
+                    android:centerColor="#4abbfd"
+                    android:centerY="0.75"
+                    android:endColor="#4abbfd"
+                    android:startColor="#4abbfd" />
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>

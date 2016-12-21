@@ -1,0 +1,494 @@
+﻿<resources>
+    <string name="app_name">众觅</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_logo">LogoActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_lead">LoginActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_wbshare">WBShareActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="purse_accident_insurance_textview">您在点击紧急求助时，
+意外保险信用金即会被使用（清空）\n
+使用方法：\n
+第一个来帮助你的人将获得信用金的1/2\n
+第二个来帮助你的人将获得剩余信用金的1/2\n
+以此类推...\n
+如x发布了1000元的求助A B C接单\n
+A是第一个来帮助你的人 将会得到500元\n
+B是第二个来帮助你的人 将会得到250元\n
+C是第三个来帮助你的人 将会得到125元\n
+剩下的125将会回到你的信用金了。\n
+
+（此信用金的分配将由软件平台自动划分）\n
+如意外保险信用金用之不还则会影响您在中国的信誉问题。
+</string>
+    
+    <string name="tv_creditsesame">
+        您现已成功绑定芝麻信用分，『众觅』平台将根据您的芝麻信用分以及其它综合信用因素为您分配意外保险信用金。\n\n意外保险信用金将用于您在本平台发布紧急求助，在『众觅』平台绑定芝麻信用分同时也意味着更加诚信的使用愿景。\n\n芝麻信用管理有限公司是合法独立的信用评估及信用管理机构，其推出的芝麻信用是面向社会的信用服务体系，依据方方面面的信息，运用大数据及云计算技术客观呈现个人的信用状况，通过连接各种服务，让每个人都能体验信用所带来的价值。\n\n评分等级说明：350-550，较差；550-600，中等；600-650，良好；650-700，优秀；700-950，极好。
+</string>
+    <string name="text_newversion">
+        您当前使用的为最新版。
+    </string>
+    <string name="text_versionnumber">
+        1.0.0
+    </string>
+    <string name="tv_myhelpertasksource">
+        悬赏信息被多个用户PIN分享最后被解决则属于溯源传播的PIN者按照2%%上级资金分得赏金，最先传播的pin用户获得的赏金更多哦！\n\n
+        如：小M发布了1000元的悬赏，PIN分享者A、B，因B分享C看到信息并解决了M的问题\n
+        信息传递    小M信息→A→B→C解决了问题\n
+        A PIN了一下：1000 * 2%% = 20元\n
+        B Pin了一下：（1000 - 20）* 2%% = 19.6元\n
+        C接单并完成任务：（1000 - 20 - 19.6）= 960.4元 </string>
+    <string name="style_hint">style为数字</string>
+    <string name="alias_hint">Alias为大小写字母，数字，下划线</string>
+    <string name="tag_hint">Tag为大小写字母，数字，下划线,中文， 多个用以逗号分隔</string>
+    <string name="load_position_fail">获取当前位置失败</string>
+    <string name="sosposition">求助地点:</string>
+    <string name="text_help_price">求助金额/RMB</string>
+    <string name="text_sosscope">求助范围/KM</string>
+    <string name="tv_send_sosinf">确认发送求助</string>
+    <string name="tv_tip_phone">请绑定手机号</string>
+    <string name="tv_tip_emergency_people">请绑定紧急联系人</string>
+    <string name="tv_tip_sos_receive">假如\n你是第一个跑到紧急求助人身边将获得信用金的1/2\n假如\n你是第二个跑到紧急求助人身边将获得剩余信用金的1/2\n以此类推...\n\n如x发布了1000元的求助ABC接单\n你是第一个跑到紧急求助人将会得到500元\n你是第二个跑到紧急求助人将会得到250元\n你是第三个跑到紧急求助人将会得到125元</string>
+    <string name="tv_tip_ordercompelete">您的问题是否得到了有效解决?</string>
+    <string name="tv_tip_real_name">推荐您实名认证\n认证之后将会得到(意外保险信用金)</string>
+    <string name="tv_tip_sos_warning">紧急求助一旦发出将无法取消,请确认!意外保险信用金会被扣除。</string>
+    <string name="tv_tip_sos_instruction">众觅将自动开启30秒录音,\n并即时通过平台发起紧急求助</string>
+    <string name="tv_tip_sos_instruction1">同时通过短信快速通知您的紧急联系人</string>
+    <string name="tv_tip_sos_instruction2">如您安全,请尽快取消</string>
+    <string name="tv_tip_sos_instruction3">请说出您的求助信息</string>
+    <string name="tv_tip_sos_instruction4">现场的录音有助于更快速地帮助到您</string>
+    <string name="tv_tip_sos_recording">正在录音...</string>
+    <string name="tv_tip_sos_safe">已通知您的紧急联系人</string>
+    <string name="tv_tip_sos_safe1">(您的朋友可实时查看您的位置和求助信息)</string>
+
+
+    <string name="tv_receiver_state_0">等待被选</string><!--接单者状态-->
+    <string name="tv_receiver_state_1">正在服务</string><!--接单者状态-->
+    <string name="tv_receiver_state_2">完成等赏</string><!--接单者状态-->
+    <string name="tv_receiver_state_3">已完成</string><!--接单者状态-->
+    <string name="tv_receiver_state_4">申诉审核中</string><!--接单者状态-->
+    <string name="tv_receiver_state_5">申诉完成</string><!--接单者状态-->
+    <string name="tv_receiver_state_6">等待被选</string><!--接单者状态-->
+    <string name="tv_receiver_state_7">放弃任务</string><!--接单者状态-->
+    <string name="offline_order_finished">订单已关闭</string>
+
+    <string name="order_rewarded">已领赏</string>
+    <string name="order_2b_verify">待审核</string>
+    <string name="order_not_pass">未通过</string>
+    <string name="order_closed">已关闭</string>
+    <string name="order_rewarded_number_fulled">已关闭</string><!--人数已满-->
+
+
+
+    <string name="tv_distribute_state_0">确认人员</string><!--发单者状态-->
+    <string name="tv_distribute_state_1">取消订单</string><!--发单者状态-->
+    <string name="tv_distribute_state_2">是否完成</string><!--发单者状态-->
+    <string name="tv_distribute_state_3">申诉</string><!--发单者状态-->
+    <string name="tv_distribute_state_4">申诉完成</string><!--发单者状态-->
+
+
+    <string name="tv_balancepay">余额支付</string>
+    <string name="tv_weixinpay">微信支付</string>
+    <string name="tv_tip_weixinpay">推荐安装微信5.0及以上版本的用户使用</string>
+    <string name="tv_alipaypay">支付宝支付</string>
+    <string name="tv_share_sina">分享微博</string>
+    <string name="tv_share_pin">pin了一下</string>
+    <string name="tv_share_weixin">分享微信</string>
+    <string name="tv_share_qq">分享QQ</string>
+    <string name="tv_tip_alipaypay">推荐有支付宝账号的用户使用</string>
+    <string name="bt_camera">相机</string>
+    <string name="bt_net_help">网络悬赏</string>
+    <string name="bt_safe">不需要求助了</string>
+    <string name="bt_real_help">线下悬赏</string>
+    <string name="bt_photoalbum">相册</string>
+    <string name="bt_cancle">取消</string>
+    <string name="bt_cancle1">否</string>
+    <string name="bt_continue">继续</string>
+    <string name="bt_area_5KM">5KM</string>
+    <string name="bt_area_10KM">10KM</string>
+    <string name="bt_area_15KM">15KM</string>
+    <string name="bt_area_unlimited">不限</string>
+    <string name="tv_casual">随手拍</string>
+    <string name="tv_go_home">宝贝回家</string>
+    <string name="tv_supervise">交通监督</string>
+    <string name="tv_window_throw">车窗抛物</string>
+    <string name="tv_civilization">公益</string>
+    <string name="tv_positive_energy">正能量</string>
+
+    <string name="tv_titl_windowthrow_activity">车窗抛物</string>
+    <string name="tv_titl_gohome_activity">回家</string>
+    <string name="tv_titl_windowthrowinstruction_activity">使用说明</string>
+    <string name="tv_title_incivilization_activity">不文明行为举报</string>
+    <string name="tv_title_windowthrowreportinof">填写举报信息</string>
+    <string name="tv_title_realhelp_activity">发布悬赏</string>
+    <string name="tv_title_gohomereportinof">随拍</string>
+    <string name="tv_title_windowthrowhistory">历史举报</string>
+    <string name="tv_title_gohomehistory">历史拍</string>
+    <string name="tv_title_windowthrowupdatasuccess">提交成功</string>
+    <string name="tv_title_gohomesuccess">提交成功</string>
+
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="loading">正在加载...</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+    <string name="tv_report_now">我要举报</string>
+    <string name="tv_report_now_go_home">我要拍</string>
+    <string name="tv_report_now_tip">文明出行,行驶安全</string>
+    <string name="tv_report_now_tip_go_home">文明出行,随手拍</string>
+    <string name="tv_report_history">历史举报</string>
+    <string name="tv_report_history_go_home">历史拍</string>
+    <string name="tv_report_history_tip">查看历史举报,更清晰</string>
+    <string name="tv_report_history_tip_go_home">查看历史拍摄,更明了</string>
+    <string name="tv_instruction">使用说明</string>
+    <string name="tv_instruction_go_home">使用说明</string>
+    <string name="tv_instruction_tip">清楚规章制度,更直观</string>
+    <string name="tv_instruction_tip_go_home">清楚规章制度,更直观</string>
+    <string name="tv_report_how">如何进行违法举报?</string>
+    <string name="tv_report_how_go_home">如何进行拍摄?</string>
+    <string name="tv_report_how_detail">1.拍下60秒以上车窗抛异物视频\n\n2.上传视频\n\n3.审核通过后等待领赏\n\n4.感谢您为城市文明建设尽一份力</string>
+    <string name="tv_report_how_detail_go_home">1.发现疑似走失儿童\n\n2.拍照上传\n\n3.感谢为公益事业尽一份力</string>
+    <string name="tv_reason_windowthrowinstruction_activity">如何进行违法举报？</string>
+    <string name="tv_attention_windowthrowinstruction_activity"></string>
+    <string name="tv_reasondetail_windowthrowinstruction_activity">1.对于车窗抛物行为，提供有效的现场视频，审核通过之后，将获得当地相关的政策奖励，同时为城市文明建设尽一份力。\n\n2.违法举报视频需要拍摄60秒以上。\n\n3.违法举报的图片、视频，要清晰的反映违法车辆车牌号、外观、违法事实，建议在图像中清晰显示出违法地点的标志性建筑。\n\n4.举报者需要严格遵守交通规则，不得在妨碍交通安全的情况下进行拍摄。</string>
+    <string name="tv_reasondetail_gohomeinstruction_activity">如何进行拍摄？\n\n1.当发现疑似走失的儿童时，可以使用我要拍功能，拍下儿童照片，系统将把照片上传到数据库，方便进行失踪儿童比对，为公益事业尽一份力。\n\n2.单次最多可以上传3张照片。\n\n3.请保证拍摄的照片清晰，并尽量显示儿童周围的标志性建筑等环境特征。\n\n</string>
+
+    <string name="toast_register_success">注册成功</string>
+    <string name="toast_non_headImg">亲,上传头像让别人认识你哦！</string>
+    <string name="toast_non_nickname">亲,昵称不能少于两位哦～</string>
+    <string name="toast_register_failer">注册失败</string>
+    <string name="toast_phone_used">手机号已被占用</string>
+    <string name="toast_phone_error">手机号已被占用</string>
+    <string name="toast_pic_format_error">请选择图片</string>
+    <string name="toast_video_format_error">请选择视频</string>
+    <string name="toast_phone_length_error">请输入11位手机号</string>
+    <string name="toast_password_length_error">请输入6-20位密码</string>
+    <string name="toast_password_different_error">两次输入的密码不一致</string>
+    <string name="toast_sms_length_error">请输入6位验证码</string>
+    <string name="toast_updata_success">上传成功</string>
+    <string name="toast_updata_failer">上传失败</string>
+    <string name="weibosdk_demo_toast_share_response_args_success">分享成功</string>
+    <string name="weibosdk_demo_toast_share_response_args_failed">分享失败</string>
+    <string name="toast_add_userinfo_failer">完善资料失败</string>
+    <string name="toast_add_userinfo_success">完善资料成功</string>
+    <string name="tv_user_phone">举报人电话</string>
+    <string name="tv_user_name">举报人姓名</string>
+    <string name="tv_pay">支付给每人</string>
+    <string name="tv_location">位置</string>
+    <string name="tv_user_ID">身份证号码</string>
+    <string name="tv_car_number">车牌号</string>
+    <string name="tv_car_time">违法时间</string>
+    <string name="tv_shooting_time">拍摄时间</string>
+    <string name="tv_position">违法地点</string>
+    <string name="tv_position_go_home">发现地点</string>
+    <string name="tv_report_state_0">待审核</string>
+    <string name="tv_report_state_1">审核通过</string>
+    <string name="tv_report_state_2">审核不通过</string>
+    <string name="tv_note">备注信息</string>
+    <string name="tv_note_go_home">信息描述</string>
+    <string name="tv_hint_user_phone">请输入手机号</string>
+    <string name="tv_hint_user_name">请输入举报人姓名</string>
+    <string name="tv_hint_user_ID">请输入身份证</string>
+    <string name="tv_hint_car_number">请输入车牌号</string>
+    <string name="tv_hint_car_time">请选择违法时间</string>
+    <string name="tv_hint_shooting_time">请选择拍摄时间</string>
+    <string name="tv_hint_position">请填写地点</string>
+    <string name="tv_hint_note">选择视频/图片  (可选)</string>
+    <string name="tv_tip_photo">选择图片  (可选)</string>
+    <string name="tv_tip_video_1">选择视频  (可选)</string>
+    <string name="tv_tip_other">选择图片  (可选)</string>
+    <string name="tv_spread">展开</string>
+    <string name="tv_inspread">收起</string>
+    <string name="cb_guest_unchecked">匿名</string>
+    <string name="cb_guest_checked">实名</string>
+    <string name="bt_update">提交审核</string>
+    <string name="bt_confirm_pay">确认支付</string>
+    <string name="bt_back">返回</string>
+    <string name="bt_confirm">确定</string>
+    <string name="bt_confirm1">确认</string>
+    <string name="bt_confirm2">是</string>
+    <string name="dialog_sos_ongoing">您有一个正在进行的SOS，是否进入？</string>
+    <string name="dialog_already_sos_ongoing">您已经有一个正在进行的紧急求助，是否进入？</string>
+    <string name="dialog_already_safe_sos_ongoing">有未付款确认的紧急求助是否进入？</string>
+    <string name="toast_error_is_auth">请实名认证</string>
+    <string name="dialog_realname_auth">请您完成实名认证</string>
+    <string name="dialog_realname_auth_now">为保证平台信息真实性请先实名认证</string>
+    <string name="dialog_enter_50m">您已进入50米范围内，已完成任务</string>
+    <string name="dialog_opengps_hint">为了保证您的正常使用，请打开GPS</string>
+    <string name="toast_non_login">请登陆</string>
+    <string name="toast_login_failure">登陆失败,请检查用户名 密码</string>
+    <string name="toast_auto_login_failure">登录过期,重新登录</string>
+    <string name="toast_non_video">请选择视频文件</string>
+    <string name="toast_non_phone">请输入手机号</string>
+    <string name="toast_non_name">请输入姓名</string>
+    <string name="toast_non_user_ID">请输入身份证号</string>
+    <string name="toast_sos_err_state">请先确认我安全了</string>
+    <string name="toast_err_receive_sos_order_repeat">请勿重复参与同一个SOS订单</string>
+    <string name="toast_err_receive_sos_order_repeat1">错误,此单是您发的单</string>
+    <string name="toast_non_min_price">请输入最小金额</string>
+    <string name="toast_non_max_price">请输入最大金额</string>
+    <string name="toast_error_min_price">最小金额需大于1000</string>
+    <string name="toast_error_max_price1">最大金额需小于1000</string>
+    <string name="toast_error_max_price">最大金额不能小于最小金额</string>
+    <string name="toast_non_car_number">请输入车牌号</string>
+    <string name="toast_non_car_time">请选择违法时间</string>
+    <string name="toast_error_car_time">请输入正确的违法时间</string>
+    <string name="toast_error_car_number">请输入5位车牌号</string>
+    <string name="toast_non_position">请输入举报地点</string>
+    <string name="toast_one_pic">至少一张图片</string>
+    <string name="toast_non_province">请选择省份</string>
+    <string name="toast_non_city">请选择车牌号城市代码</string>
+    <string name="toast_error_video_min_duration">视频不得少于60秒</string>
+    <string name="toast_error_video_max_duration">视频不得超过30分钟</string>
+    <string name="toast_error_net">网络连接异常</string>
+    <string name="toast_receivesos_compelete">你已完成任务</string>
+    <string name="toast_receivesos_failer">接单失败</string>
+    <string name="toast_receivesos_success">接单成功</string>
+    <string name="toast_error_location">位置错误</string>
+    <string name="toast_non_navigation">抱歉,未能找到合适的路线</string>
+    <string name="toast_compeletetask_success">完成任务成功</string>
+    <string name="toast_compeletetask_fail">完成任务失败</string>
+    <string name="toast_distributecomment_success">评论成功</string>
+    <string name="toast_distributecomment_fail">评论失败</string>
+    <string name="toast_confirmorder_success">确认完成成功</string>
+    <string name="toast_confirmorder_fail">确认完成失败</string>
+    <string name="toast_signorder_success">确认人员成功</string>
+    <string name="toast_signorder_fail">确认人员失败</string>
+    <string name="toast_weixin_share_uninstalled">请先安装微信</string>
+    <string name="toast_weixin_share_cancle">用户取消</string>
+    <string name="toast_weixin_share_refuse">用户拒绝</string>
+    <string name="toast_weixin_login_cancle">用户取消</string>
+    <string name="toast_weixin_login_refuse">用户拒绝</string>
+    <string name="toast_sina_share_cancle">取消分享</string>
+    <string name="toast_sina_share_fail">分享失败</string>
+    <string name="toast_sina_share_uninstalled">请先安装新浪微博</string>
+    <string name="toast_sina_share_success">分享成功</string>
+    <string name="toast_error_talk">同一用户,无法私信</string>
+    <string name="toast_non_comment">请输入评论内容</string>
+    <string name="toast_fail_comment">评论失败</string>
+    <string name="toast_fail_pin">PIN失败</string>
+    <string name="toast_success_pin">PIN成功</string>
+    <string name="toast_success_comment">评论成功</string>
+    <string name="toast_failer_balance">获取余额失败</string>
+    <string name="toast_error_accept_order">您已抢过此单</string>
+    <string name="toast_error_accept_order1">接单者超过上限</string>
+    <string name="toast_error_accept_order2">求助订单上一节点用户无效</string>
+    <string name="toast_error_accept_order3">无权操作(此单可能是您发布的订单)</string>
+    <string name="tv_title_pay_activity">支付订单</string>
+    <string name="toast_failer_sos">SOS发布失败</string>
+    <string name="toast_success_sos">SOS发布成功</string>
+    <string name="toast_failer_sos1">SOS发布失败,未绑定芝麻信用或信用金为0</string>
+    <string name="toast_failer_sos2">SOS发布失败,请设置紧急联系人</string>
+    <string name="toast_failer_sos3">请绑定芝麻信用</string>
+    <string name="toast_failer_sos4">信用值需大于零</string>
+    <string name="toast_failer_sos_repeat">请勿重复发布SOS</string>
+    <string name="toast_failer_video_pic">获取视频预览图失败</string>
+    <string name="toast_non_et_people_number">网络连接异常</string>
+    <string name="toast_non_start_time">请选择开始时间</string>
+    <string name="toast_non_end_time">请选择结束时间</string>
+    <string name="toast_et_monery_err">请输入金额</string>
+    <string name="toast_tv_location_err">请选择位置</string>
+    <string name="toast_error_server">服务器返回结果异常</string>
+    <string name="tv_attention_windowthrowreportinfo_1">\u0020\u0020\u0020\u0020\u0020\u0020城市管理部门会依法保护举报人的合法权益，严格执行举报保密制度。在未经举报人允许的情况下，不会公开举报人的姓名、身份、手机登个人资料。</string>
+    <string name="tv_attention_windowthrowreportinfo_2">\u0020\u0020\u0020\u0020\u0020\u0020实名举报的违法信息，将会获得相应的奖励。</string>
+
+    <string name="pull_to_refresh_pull_label">下拉刷新</string>
+    <string name="pull_to_refresh_release_label">松开后刷新</string>
+    <string name="pull_to_refresh_refreshing_label">刷新\u2026</string>
+    <string name="pull_to_refresh_footer_release_label">松开后加载</string>
+    <string name="pull_to_refresh_footer_pull_label">上拉加载更多</string>
+    <string name="pull_to_refresh_footer_refreshing_label">加载中\u2026</string>
+    <string name="tv_tip_pic">选择照片 (可选)</string>
+    <string name="tv_tip_pic_1">选择照片 (必选)</string>
+    <string name="tv_tip_video">选择视频 (必选)</string>
+    <string name="log_enter_catch">进入catch异常</string>
+
+    <string name="title_text_helperpeopledetail">帮人详情</string>
+    <string name="title_text_sos_navigation">详情</string>
+
+    <string name="permissions_camera_error">相机无法完成初始化，请您正确授权</string>
+    <string name="str_request_camera_message">请求获取相机权限，帮助您发布照片，请您同意，否则将无法打开相机</string>
+    <string name="str_request_location_message">应用程序将请求获取您的位置，以帮助您发起求助信息，否则程序将无法正常运行</string>
+    <string name="str_request_readcontacts_message">应用程序将请求获取您的联系人信息，否则程序可能无法正常运行</string>
+    <string name="str_request_record_message">请求获取录音权限，以帮助您发起SOS，请您务必同意，否则无法录音，功能将失效</string>
+    <string name="str_request_sos_message">为帮助您发起SOS，请您务必同意以下权限，否则功能将失效</string>
+    <string name="permissions_location_error">位置无法初始化,请您正确授权。</string>
+    <string name="permissions_readcontacts_error">无法读取联系人,请您正确授权。</string>
+    <string name="permissions_record_error">为能正常发送紧急求助,请您务必授权录音权限。</string>
+
+    <string name="str_request_sd_message">请求获取SD卡权限，以便读取图片/视频</string>
+    <string name="permissions_sd_error">无法读取外部存储,请正确授权。</string>
+
+    <string name="str_cannot_use_insurance">您暂时无法使用意外保险信用金</string>
+    <string name="str_howto_increase_insurance">1、多使用该账号消费\n2、多与好友互动，多PIN，多分享</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="title_positive">公益</string>
+    <string name="title_help">求助</string>
+    <string name="title_help_others">帮人</string>
+    <string name="title_message">消息</string>
+
+
+    <string name="umeng_share">分享</string>
+    <string name="umeng_auth">授权</string>
+    <string name="umeng_deleauth">清除对应授权</string>
+    <string name="umeng_shake">摇一摇</string>
+    <string name="umeng_comment">评论相关</string>
+    <string name="umeng_openshare">打开分享面板</string>
+    <string name="umeng_openshare_custom">打开自定义分享面板</string>
+    <string name="umeng_sharebutton_custom">自定义分享按钮</string>
+    <string name="umeng_share1">默认分享面板可编辑分享页</string>
+    <string name="umeng_share2">自定义分享面板可编辑分享页</string>
+    <string name="umeng_share3">单平台直接分享</string>
+    <string name="umeng_share4">多平台直接分享</string>
+    <string name="umeng_share5">默认分享面板可编辑分享页多平台</string>
+
+    <string name="umeng_shakeshotscreen">摇一摇截屏</string>
+    <string name="umeng_shakeshare">摇一摇分享</string>
+    <string name="umeng_registershake">注册摇一摇</string>
+
+    <string name="umeng_comment1">用户信息</string>
+    <string name="umeng_comment2">本地登陆</string>
+    <string name="umeng_comment3">本地授权</string>
+    <string name="umeng_comment4">好友功能</string>
+    <string name="umeng_comment5">评论功能</string>
+    <string name="umeng_comment6">注销</string>
+    <string name="umeng_comment7">解决事例</string>
+
+    <string name="umeng_nativequery">本地登陆信息查询</string>
+    <string name="umeng_loginsina">登陆新浪</string>
+    <string name="umeng_logoutsina">登出新浪</string>
+    <string name="umeng_loginqq">登陆QQ</string>
+    <string name="umeng_logoutqq">登出QQ</string>
+    <string name="umeng_loginqzone">登陆QQ空间</string>
+    <string name="umeng_logoutzone">登出QQ空间</string>
+    <string name="umeng_customlogin">自定义登陆</string>
+
+    <string name="umeng_addfriend">添加好友</string>
+    <string name="umeng_getfriendlist">获取好友列表</string>
+
+    <string name="umeng_commentmodular">评论模块</string>
+    <string name="umeng_getcommentlist">获取评论列表</string>
+    <string name="umeng_sendcomment">发出评论</string>
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+    <string name="actionbar_activity_not_found">Failed to open intent...</string>
+    <string name="share_by_weixin">微信分享</string>
+    <string name="share_by_qq">QQ分享</string>
+    <string name="share_by_yixin">易信分享</string>
+    <string name="shake_share">注册摇一摇截图（分享）</string>
+    <string name="shake_openshare">注册摇一摇（打开分享面板）</string>
+    <string name="shake_scrshot">注册摇一摇（截图）</string>
+    <string name="take_scrshot">直接截图</string>
+    <string name="play">播放</string>
+    <string name="pause">暂停</string>
+    <string name="stop">停止</string>
+    <string name="quit">退出</string>
+    <string name="video_start_time">00:00</string>
+    <string name="goto_video">摇一摇视频截图Activity</string>
+    <string name="goto_game">游戏Activity</string>
+    <string name="goto_common">普通Activity</string>
+    <string name="video">VideoActivity</string>
+    <string name="game">GameActivity</string>
+    <string name="common">CommonActivity</string>
+    <string name="back">返回</string>
+    <string name="goto_facebook">添加Facebook分享</string>
+    <string name="fb_login">Facebook登录</string>
+    <string name="fb_logout">Facebook注销</string>
+    <string name="fb_share">Facebook分享</string>
+    <string name="laiwang_share">来往分享</string>
+    <string name="instagram_share">Instagram分享</string>
+    <string name="pocket_share">Pocket分享</string>
+    <string name="linkedin_share">LinkedIn分享</string>
+    <string name="foursquare_share">FourSquare分享</string>
+    <string name="ynote_share">有道云笔记分享</string>
+    <string name="evernote_share">印象笔记分享</string>
+    <string name="pinterest_share">Pinterest分享</string>
+    <string name="custom_platform_share">自定义平台分享</string>
+    <string name="login_sina">登录（新浪微博）</string>
+    <string name="logout_sina">注销登录（新浪微博）</string>
+    <string name="login_qq">登录（QQ）</string>
+    <string name="logout_qq">注销登录（QQ）</string>
+    <string name="login_qzone">登录（QQ空间）</string>
+    <string name="logout_qzone">注销登录（QQ空间）</string>
+    <string name="whatsapp_share">whatsapp分享</string>
+    <string name="line_share">line分享</string>
+    <string name="tumblr_share">tumblr分享</string>
+    <string name="kakao_share">Kakao Talk分享</string>
+    <string name="flickr_share">flickr分享</string>
+    <string name="fb_app_id">567261760019884</string>
+    <string name="photo_post">Photo Post</string>
+    <string name="success">Success</string>
+    <string name="successfully_posted_post">Successfully posted \'%1$s\'.\nPost ID: %2$s</string>
+    <string name="error">Error</string>
+    <string name="status_update">Updating Facebook status at </string>
+    <string name="ok">OK</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="permission_not_granted">Unable to perform selected action because permissions were not granted.</string>
+    <string name="facebook_app_id">487692214752558</string>
+    <string name="perm">需要权限:</string>
+
+    <string name="termsofservice_login">登录即表示您同意<a href="http://www.dujoy.cn/app/terms-of-service/index.html">众觅使用和服务条款</a></string>
+    <string name="termsofservice_register">注册即表示您同意<a href="http://www.dujoy.cn/app/terms-of-service/index.html">众觅使用和服务条款</a></string>
+    <string name="need_people_count">需要人手</string>
+
+    <string name="tv_sos_describe">我可能遇到了危险，需要您的帮助。\n温馨提示:请确保自身人生安全情况下实施救援。\n为保证及时性，意外保险金获取规则：\n若您是第一个跑到紧急求助人身边(50m有效距离内）将获得资格领取意外保险信用金的1/2;\n若您是第二个跑到紧急求助人身边将获得剩余信用金的1/2资格\n以此类推...\n\n如小M发起紧急求助[1000元]，\n第一个到达紧急求助用户将会得到500元\n第二个250元\n第三个125元\n剩余资金退回小M意外保险信用金账户</string>
+    <string name="customer_service">正在处理，请耐心等待。</string>
+    <string name="sos_desc">发送了sos紧急求助信号。如您在附近，可来。</string>
+    <string name="sensitive_word">含敏感词汇,请重新输入</string>
+    <string name="hint_detail_info">请输入详细信息</string>
+
+
+
+    <string name="loading_no_more">已加载全部</string>
+
+    <!-- Error View -->
+    <string name="error_view_click_to_refresh">点击屏幕,重新加载</string>
+    <string name="error_view_no_data">暂无内容</string>
+    <string name="error_view_loading">加载中…</string>
+    <string name="error_view_load_error_click_to_refresh">内容加载失败\r\n点击重新加载</string>
+    <string name="error_view_network_error_click_to_refresh">没有可用的网络</string>
+    <string name="tip_network_error">没有可用的网络</string>
+
+    <string name="unlogin">未登录，请先登录</string>
+    <string name="unlogin_tip">您还未登录\r\n或网络延迟</string>
+    <string name="my_information_unlogin_tips">未登录</string>
+    <string name="copy_success">复制成功</string>
+    <string name="record_permision_fail_string">请打开录音权限</string>
+    <string name="app_permision_fail_string">请打开位置及存储权限</string>
+    <string name="readcontacts_permision_fail_string">请打开读取联系人权限</string>
+    <string name="audio_failed">录音上传失败</string>
+    <string name="civilization_i_want_say">让众多觅客和你一起实现愿望</string>
+    <string name="order_grabed">已抢单</string>
+    <string name="boudle_phone_num">需先绑定手机号</string>
+
+    <string name="real_name_authentication_verifying">审核中</string>
+    <string name="real_name_authenticaton_not_pass">未通过</string>
+    <string name="real_name_authentication_ok">已认证</string>
+    <string name="real_name_authentication_tobe_verify">未认证</string>
+    <string name="content_pack_up">收起全文</string>
+    <string name="lost_child_platform_word">本信息来自公安部儿童失踪信息紧急发布平台</string>
+    <string name="word_limit_20">限制15个字</string>
+    <string name="verify_specification">注：\n1.保护用户权益，避免他人抢先进行恶意实名，发布违法信息 \n2.实名认证身份标识，提升个人信用度，促进交易安全进行 \n3.特权：保险信用金、SOS大额赏金只限实名认证用户 \n4.2016.12.12先提交实名认证获取信任标识人工审核免费 \n5.详细可点击<a href="http://www.dujoy.cn/app/identification/index.html">详细认证说明</a>查看</string>
+    <string name="my_integral_specification"><a href="http://www.dujoy.cn/app/integral/index.html">  积分规则</a></string>
+    <string name="help_word">资金由平台托管,不满意可随时退回,详情见\n<a href="http://www.dujoy.cn/app/step-reward/index.html">悬赏帮助说明</a></string>
+    <string name="withdraw_deposit">1、目前提现只支持支付宝，将逐步支持微信、银行卡；\n2、提现周期为3-5天，遇到法定节假日依次顺延；\n3、提现的最低金额为50元；\n4、支付宝转账手续费由用户承担。</string>
+    <string name="purse_recharge">1、目前只支持支付宝充值，将逐步支持微信、银行卡； \n2、使用支付宝充值，金额不受限制。</string>
+    <string name="zhima_introduce">1.授权众觅将您的姓名和身份证号传递给芝麻信用,用于向芝麻信用进行身份校验;\n2.授权众觅向芝麻信用查询您的芝麻信用分和相关信用信息,以评估其与您之间的交易或服务条件.该授权在授权日之后一年内有效.</string>
+    <string name="content_wish_hint">请输入愿望内容</string>
+
+
+</resources>

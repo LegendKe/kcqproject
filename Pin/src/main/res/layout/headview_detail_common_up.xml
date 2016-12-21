@@ -1,0 +1,129 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_left2right"
+        android:layout_marginRight="@dimen/padding_left2right"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <com.djx.pin.myview.CircleImageView
+            android:id="@+id/headview_iv_avatar"
+            style="@style/avatar_imageview_50x50"
+            android:layout_centerVertical="true" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/headview_iv_avatar"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/headview_tv_userName"
+                style="@style/textview_nickname"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/headview_tv_time"
+                style="@style/textview_time"
+                android:layout_below="@+id/headview_tv_userName"
+                android:layout_marginTop="5dp"
+                android:text="" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/headview_tv_order"
+            style="@style/button_order_state"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_qiandanbg"
+            android:text="抢单"
+            />
+    </RelativeLayout>
+
+
+    <include layout="@layout/line_layout"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/padding_left2right"
+        android:layout_marginRight="@dimen/padding_left2right"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/textview_subtitle"
+            android:text="悬赏金额:" />
+
+        <TextView
+            android:id="@+id/headview_tv_money"
+            style="@style/textview_subtitle"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            style="@style/textview_subtitle"
+            android:text="需要人手:"
+            android:layout_marginLeft="50dp"/>
+        <TextView
+            android:id="@+id/headview_tv_needLimit"
+            style="@style/textview_subtitle"
+            android:layout_marginLeft="10dp"
+            android:text="" />
+    </LinearLayout>
+
+
+    <include layout="@layout/line_layout"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/padding_left2right"
+        android:layout_marginRight="@dimen/padding_left2right"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/textview_subtitle"
+            android:text="悬赏周期:" />
+
+        <TextView
+            android:id="@+id/headview_tv_period"
+            style="@style/textview_subtitle"
+            android:layout_marginLeft="10dp" />
+    </LinearLayout>
+
+    <include layout="@layout/line_layout"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="@dimen/padding_left2right"
+        android:layout_marginRight="@dimen/padding_left2right"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/headview_tv_orderType"
+            style="@style/content_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="悬赏事项:" />
+
+        <TextView
+            android:id="@+id/headview_tv_content"
+            style="@style/text_28px_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:lineSpacingExtra="2dp"
+            android:textIsSelectable="true"/>
+    </LinearLayout>
+</LinearLayout>

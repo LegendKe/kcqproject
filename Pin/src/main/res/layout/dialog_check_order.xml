@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_backgroud_shape"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_dialog_message"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@android:color/transparent"
+        android:textColor="@color/text_color_black"
+        android:textSize="18sp" />
+   <include layout="@layout/line_layout"/>
+    <TextView
+        android:id="@+id/tv_dialog_content"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="5"
+        android:textColor="@color/text_color_black"
+        android:textSize="18sp" />
+
+    <uk.co.senab.photoview.PhotoView
+        android:id="@+id/iv_dialog_image"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="@dimen/space_200"
+        android:visibility="gone"
+        android:scaleType="centerCrop"/>
+
+    <include layout="@layout/line_layout"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="horizontal"
+        android:background="@android:color/transparent"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/dialog_btn_ok"
+            style="@style/button_common_white"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/line_color"
+            >
+        </View>
+
+        <Button
+            android:id="@+id/dialog_btn_cancel"
+            style="@style/button_common_white"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="" />
+    </LinearLayout>
+</LinearLayout>

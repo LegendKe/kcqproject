@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_left2right"
+        android:background="@color/gray" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订单状态"
+            android:textColor="@color/text_color_focused"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/img_TaskState_MHDA"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/ic_nonedotask" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="正在悬赏"
+                android:textColor="@color/text_color_focused"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_TaskDo_MHDA"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="已有人选(1/1)"
+                android:textColor="@color/text_color_normal"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_TaskComplete_MHDA"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="已经完成"
+                android:textColor="@color/text_color_normal"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_QiangDanCount_MHDA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text=""
+        style="@style/text_28px_light_black"
+        android:paddingLeft="@dimen/margin_left2right"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp"
+        android:background="@color/gray"/>
+
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="@dimen/margin_left2right"
+        android:background="@color/blue"
+       >
+        <TextView
+            android:id="@+id/tv_search"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="取消"
+            android:gravity="center"
+           android:paddingLeft="@dimen/padding_left2right"
+            android:paddingRight="@dimen/padding_left2right"
+            />
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:textSize="14sp"
+            android:layout_height="30dp"
+            android:background="@drawable/et_background_round"
+            android:layout_toLeftOf="@id/tv_search"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@mipmap/main_search"
+            android:paddingLeft="10dp"
+            android:drawablePadding="10dp"
+            android:textColor="@color/black_light"
+            android:textColorHint="@color/black_light"
+            android:hint="搜索"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/fragment_list"/>
+        <TextView
+            android:id="@+id/tv_no_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="暂未找到您需要的服务"
+            android:background="@color/gray"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</LinearLayout>

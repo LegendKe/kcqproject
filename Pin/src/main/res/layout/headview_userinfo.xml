@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/blue"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.djx.pin.myview.CircleImageView
+                    android:layout_width="105dp"
+                    android:layout_height="105dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@color/white" />
+
+                <com.djx.pin.myview.CircleImageView
+                    android:id="@+id/cimg_Avatar_LOMA"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_defualtavater" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_UserName_LOMA"
+                style="@style/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="小明酱sktl" />
+
+            <ImageView
+                android:id="@+id/img_Sex_LOMA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:src="@mipmap/ic_sexwomen" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/tv_identify"
+                style="@style/sildmenusmall_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="未认证"
+                android:background="@drawable/shap_hollow"
+                android:drawableLeft="@mipmap/ic_identify_gray"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp"
+                android:drawablePadding="5dp"/>
+
+            <TextView
+                android:id="@+id/tv_zhima_value"
+                style="@style/sildmenusmall_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="未设置"
+                android:background="@drawable/shap_hollow"
+                android:drawableLeft="@mipmap/ic_zhima_gray"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp"
+                android:drawablePadding="5dp"/>
+
+            <TextView
+                android:id="@+id/tv_distance"
+               android:textSize="12sp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="隐  藏"
+                android:background="@drawable/shap_hollow"
+                android:drawableLeft="@mipmap/ic_distance_gray"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp"
+                android:drawablePadding="5dp"
+                android:singleLine="true"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <!--Withdraw提现-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/content_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="性别" />
+
+            <TextView
+                android:id="@+id/tv_Sex_LOMA"
+                style="@style/content_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="35dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="" />
+        </LinearLayout>
+
+        <include layout="@layout/line_layout"/>
+        <!--Integral积分-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/content_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="生日" />
+
+            <TextView
+                android:id="@+id/tv_Birthday_LOMA"
+                style="@style/content_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="35dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="" />
+
+        </LinearLayout>
+
+        <include layout="@layout/line_layout"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/content_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="故乡" />
+            <TextView
+                android:id="@+id/tv_NativePlace_LOMA"
+                style="@style/content_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="35dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="" />
+        </LinearLayout>
+
+        <include layout="@layout/line_layout"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/content_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="心愿" />
+            <TextView
+                android:id="@+id/tv_wish"
+                style="@style/content_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="35dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

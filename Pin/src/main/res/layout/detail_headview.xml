@@ -1,0 +1,141 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_left2right"
+        android:layout_marginRight="@dimen/padding_left2right"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <com.djx.pin.myview.CircleImageView
+            android:id="@+id/cimg_Avatar_HPDA"
+            style="@style/avatar_imageview_50x50"
+            android:layout_centerVertical="true" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/cimg_Avatar_HPDA"
+            android:layout_marginLeft="10dp"
+            android:layout_centerInParent="true">
+            <TextView
+                android:id="@+id/tv_UserName1_LifeReward"
+                style="@style/textview_nickname"
+                android:text="" />
+            <TextView
+                android:id="@+id/tv_Time1_LifeReward"
+                style="@style/textview_time"
+                android:layout_below="@+id/tv_UserName1_LifeReward"
+                android:text=""
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_QiangDan_LifeRewardDetail"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_qiandanbg"
+            android:text="抢单"
+            style="@style/button_order_state" />
+    </RelativeLayout>
+
+
+    <include layout="@layout/line_layout"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/padding_left2right"
+        android:layout_marginRight="@dimen/padding_left2right"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/textview_subtitle"
+                android:text="悬赏金额:" />
+            <TextView
+                android:id="@+id/tv_HelperPrice_LifeRewardDetail"
+                style="@style/textview_subtitle"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_need_people_num"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/padding_left2right"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/textview_subtitle"
+                android:text="需要人手:" />
+
+            <TextView
+                android:id="@+id/tv_HelperPeopleNum_LifeRewardDetail"
+                style="@style/textview_subtitle"
+                android:layout_marginLeft="10dp"
+                android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <include layout="@layout/line_layout"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/padding_left2right"
+        android:layout_marginRight="@dimen/padding_left2right"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/textview_subtitle"
+            android:text="悬赏周期:" />
+        <TextView
+            android:id="@+id/tv_HelperPeriod_LifeRewardDetail"
+            style="@style/textview_subtitle"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+    <include layout="@layout/line_layout"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_left2right"
+        android:layout_marginRight="@dimen/padding_left2right"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_content_type"
+            style="@style/content_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="悬赏事项:" />
+
+        <TextView
+            android:id="@+id/tv_Content_LDA"
+            style="@style/text_28px_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textIsSelectable="true"
+            android:text=""
+            />
+    </LinearLayout>
+</LinearLayout>

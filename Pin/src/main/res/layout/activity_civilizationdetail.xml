@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".activity.CivilizationDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/title"
+            style="@style/title">
+
+            <LinearLayout
+                android:id="@+id/ll_Back_CivilizationDetail"
+                style="@style/button_selector"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/ic_back" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/img_Title_CivilizationDetail"
+                style="@style/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="详情" />
+        </RelativeLayout>
+
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/lv_CivilizationDetail"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            ptr:ptrHeaderTextColor="#8a8a8a">
+
+        </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+
+        <include layout="@layout/tab_send_share_and_comment"/>
+
+        <View
+            android:id="@+id/v_ParentCover_CDA"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/text_color_black"
+            android:visibility="gone">
+
+        </View>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_ViewGroup2_CDA"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="60dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="50dp"></View>
+    <LinearLayout
+        android:id="@+id/ll_ShowImgeView_Pop_LRDA"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+        <com.djx.pin.widget.adapters.MyViewPager
+            android:layout_gravity="center"
+            android:id="@+id/vp_LRDA_Pop"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+        </com.djx.pin.widget.adapters.MyViewPager>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="center_horizontal"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_ImageViewPosition_POP_LRDA"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:text="1"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:text="/"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_ImageViewCount_POP_LRDA"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:text="19"
+            />
+    </LinearLayout>
+
+</LinearLayout>

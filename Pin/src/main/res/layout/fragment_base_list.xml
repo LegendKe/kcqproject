@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/framelayout_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swiperefreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+   <RelativeLayout
+       android:id="@+id/rl_emptyLayout"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:visibility="gone">
+       <ImageView
+           android:id="@+id/iv_01"
+           android:layout_width="100dp"
+           android:layout_height="100dp"
+           android:src="@mipmap/ic_no_data"
+           android:layout_centerInParent="true"
+           />
+       <TextView
+           style="@style/textview_14sp_hint"
+           android:text="暂无数据"
+           android:layout_centerInParent="true"
+           android:layout_below="@+id/iv_01"
+           />
+   </RelativeLayout>
+</FrameLayout>

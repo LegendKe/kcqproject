@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray"
+    android:orientation="vertical">
+
+    <View style="@style/style_view_line" />
+
+    <RadioGroup
+        android:id="@+id/rg_intelligent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rb_intelligent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:button="@drawable/selector_radiobutton_helppeople"
+            android:padding="15dp"
+            android:text="  智能排序"
+            android:visibility="gone"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rb_realtime_hottest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.5dp"
+            android:background="@color/white"
+            android:button="@drawable/selector_radiobutton_helppeople"
+            android:padding="15dp"
+            android:text="  实时最热"
+            style="@style/content_text"  />
+
+        <RadioButton
+            android:id="@+id/rb_realtime_newest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.5dp"
+            android:background="@color/white"
+            android:button="@drawable/selector_radiobutton_helppeople"
+            android:padding="15dp"
+            android:text="  实时最新"
+            style="@style/content_text" />
+
+
+        <RadioButton
+            android:id="@+id/rb_realtime_ascend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.5dp"
+            android:background="@color/white"
+            android:button="@drawable/selector_radiobutton_helppeople"
+            android:padding="15dp"
+            android:text="  按金额升序"
+            style="@style/content_text"  />
+
+        <RadioButton
+            android:id="@+id/rb_realtime_descend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.5dp"
+            android:background="@color/white"
+            android:button="@drawable/selector_radiobutton_helppeople"
+            android:padding="15dp"
+            android:text="  按金额降序"
+            style="@style/content_text" />
+    </RadioGroup>
+
+    <View style="@style/style_view_line" />
+</LinearLayout>
+

@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="space_200">300px</dimen>
+    <dimen name="padding_left2right">20px</dimen>
+</resources>

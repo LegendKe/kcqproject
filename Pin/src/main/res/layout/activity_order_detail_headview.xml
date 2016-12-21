@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <include layout="@layout/headview_detail_common_up"></include>
+
+
+    <com.djx.pin.widget.NineGridLayout
+        android:id="@+id/imgs_9grid_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_left2right">
+    </com.djx.pin.widget.NineGridLayout>
+
+    <include layout="@layout/item_pined_location2image"></include>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/gray"/>
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:paddingRight="@dimen/padding_left2right"
+        android:paddingLeft="@dimen/padding_left2right">
+        <RadioButton
+            android:id="@+id/rb_01"
+            android:text="评  论"
+            style="@style/radio_button"
+            ></RadioButton>
+        <RadioButton
+            android:id="@+id/rb_02"
+            android:text="已上传"
+            style="@style/radio_button"
+            android:checked="true"
+            ></RadioButton>
+        <RadioButton
+            android:id="@+id/rb_03"
+            android:text="分  享"
+            style="@style/radio_button"
+            android:visibility="invisible"
+            ></RadioButton>
+    </RadioGroup>
+</LinearLayout>

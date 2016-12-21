@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_view"></include>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <com.djx.pin.widget.MyRecyclerView
+                android:id="@+id/rv_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_view"></com.djx.pin.widget.MyRecyclerView>
+
+            <include
+                android:id="@+id/customer_service_in"
+                layout="@layout/item_customer_service_declararion"></include>
+
+            <include
+                android:id="@+id/customer_service_excute"
+                layout="@layout/item_customer_service_declararion"></include>
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_gravity="top"
+        android:background="#aaa" />
+
+    <include layout="@layout/navigation_view"></include>
+</LinearLayout>

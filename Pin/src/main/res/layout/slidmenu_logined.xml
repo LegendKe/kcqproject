@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/slidemenu_shape"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:background="@mipmap/slidmenu_bgtop"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                >
+                <LinearLayout
+                    android:id="@+id/ll_slidmenu_Userinfo"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    >
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <com.djx.pin.myview.CircleImageView
+                            android:id="@+id/cmg_Slid_MA"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@mipmap/ic_defualtavater"
+                            />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="10dp"
+                        >
+                        <TextView
+                            android:id="@+id/tv_NickName_MA"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="王小明"
+                            style="@style/text_32px_black"
+                            android:singleLine="true"
+                            />
+                        <TextView
+                            android:id="@+id/tv_authentication"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="认证  未实名"
+                            style="@style/text_24px_hint"
+                            android:layout_marginTop="2dp"
+                            />
+                        <TextView
+                            android:id="@+id/tv_credit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="信用  未设置"
+                            style="@style/text_24px_hint"
+                            />
+                    </LinearLayout>
+            </LinearLayout>
+
+            </LinearLayout>
+            <ImageView
+                android:visibility="gone"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="30dp"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/slidmenu_ewma"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:background="@drawable/slidemenu_shape"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_Slidmenu_Myhelper"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                style="@style/content_text_white"
+                android:drawableLeft="@mipmap/slidmenu_myhelper"
+                android:gravity="center_vertical"
+                android:text="  我的求助" />
+        </LinearLayout>
+
+        <!--reward 赏金-->
+        <LinearLayout
+            android:id="@+id/ll_Slidmenu_Reward"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="0.5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:drawableLeft="@mipmap/slidmenu_reward"
+                android:gravity="center_vertical"
+                style="@style/content_text_white"
+                android:text="  助人等赏" />
+        </LinearLayout>
+        <!--Task任务-->
+        <!--<LinearLayout-->
+            <!--android:id="@+id/ll_Slidmenu_TaskLook"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_marginTop="0.5dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:textSize="15sp"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:drawableLeft="@mipmap/slidmenu_gotmoney"-->
+                <!--style="@style/content_text_white"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:text="  任务追踪" />-->
+
+        <!--</LinearLayout>-->
+        <LinearLayout
+            android:id="@+id/ll_Slidmenu_Purse"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="0.5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:drawableLeft="@mipmap/slidmenu_purse"
+                android:gravity="center_vertical"
+                style="@style/content_text_white"
+                android:text="  我的钱包" />
+        </LinearLayout>
+
+        <!--teasing 吐槽-->
+        <LinearLayout
+            android:id="@+id/ll_Slidmenu_Teasing"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="0.5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:drawableLeft="@mipmap/slidmenu_teasing"
+                android:gravity="center_vertical"
+                style="@style/content_text_white"
+                android:text="  平台吐槽" />
+        </LinearLayout>
+      <!--  <LinearLayout
+            android:id="@+id/ll_Slidmenu_NewsVersion"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="0.5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:drawableLeft="@mipmap/slidmenu_newversion"
+                android:gravity="center_vertical"
+                style="@style/content_text_white"
+                android:text="  版本更新" />
+        </LinearLayout>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            >
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:id="@+id/tv_Slidmenu_Set"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:text="设置"
+                style="@style/content_text_white"
+                android:gravity="center"
+
+                />
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_Slidmenu_About"
+                android:layout_marginLeft="20dp"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:text="关于"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="15sp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

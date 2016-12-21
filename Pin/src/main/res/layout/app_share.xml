@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/umeng_white"
+
+    android:layout_height="match_parent">
+
+    <!--every platform has its name in sdk @string,for example sina=umeng_socialize_text_sina_key-->
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="加入文字"
+        android:id="@+id/checkBox_text_editor"
+        android:checked="true"
+        android:textColor="@color/umeng_black"
+
+        />
+    <!--<CheckBox-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="加入图片"-->
+        <!--android:id="@+id/checkBox_image_editor"-->
+        <!--android:checked="false"-->
+        <!--/>-->
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttongroup"
+
+
+        android:orientation="horizontal">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="图片"
+            android:textColor="@color/umeng_black"
+            android:id="@+id/imagebutton"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="音乐"
+            android:textColor="@color/umeng_black"
+            android:id="@+id/musicbutton"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="视频"
+            android:textColor="@color/umeng_black"
+            android:id="@+id/videobutton"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="无"
+            android:textColor="@color/umeng_black"
+            android:checked="true"
+            android:id="@+id/nonebutton"/>
+    </RadioGroup>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="加入链接"
+        android:textColor="@color/umeng_black"
+        android:id="@+id/checkBox_link_editor"
+        android:checked="false"
+
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="加入title"
+        android:textColor="@color/umeng_black"
+        android:id="@+id/checkBox_title_editor"
+        android:checked="false"
+        />
+
+    <Button
+        style="@style/textview_selector"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="分享"
+        android:textColor="@color/umeng_white"
+        android:id="@+id/share_button"
+
+        />
+</LinearLayout>

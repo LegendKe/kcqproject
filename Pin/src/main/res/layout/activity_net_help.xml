@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@mipmap/ic_topbg">
+
+        <LinearLayout
+            android:id="@+id/ll_back"
+            style="@style/button_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/padding_left2right">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_back"
+                android:visibility="gone" />
+
+            <TextView
+                style="@style/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取消" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_titl_windowthrow_activity"
+            style="@style/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/tv_title_realhelp_activity" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_guest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+
+                <View style="@style/style_view_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/padding_left2right">
+
+                    <TextView
+                        android:id="@+id/tv_2"
+                        style="@style/content_text"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_pay" />
+
+                    <EditText
+                        android:id="@+id/et_money"
+                        style="@style/content_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/tv_2"
+                        android:layout_weight="0.7"
+                        android:background="@color/white"
+                        android:hint="单位:  元  "
+                        android:inputType="numberDecimal"
+                        android:maxLines="1"
+                        android:paddingBottom="4dp"
+                        android:paddingRight="12dp"
+                        android:paddingTop="4dp"
+                        android:textColorHint="#aaa" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.3" />
+                </LinearLayout>
+
+                <View style="@style/style_view_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/padding_left2right">
+
+                    <TextView
+                        android:id="@+id/tv_3"
+                        style="@style/content_text"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:text="需要人手" />
+
+                    <EditText
+                        android:id="@+id/et_people_number"
+                        style="@style/content_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/tv_3"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:inputType="number"
+                        android:text="1" />
+                </RelativeLayout>
+
+                <View style="@style/style_view_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="@dimen/padding_left2right"
+                    android:layout_marginRight="@dimen/padding_left2right"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_4"
+                        style="@style/content_text"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:text="开始时间" />
+
+                    <TextView
+                        android:id="@+id/tv_start_time"
+                        style="@style/content_text"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@id/tv_4"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:hint="请点击选择时间" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_right" />
+                </LinearLayout>
+
+                <View style="@style/style_view_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/padding_left2right"
+                    android:paddingRight="@dimen/padding_left2right">
+
+                    <TextView
+                        android:id="@+id/tv_5"
+                        style="@style/content_text"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:text="结束时间" />
+
+                    <TextView
+                        android:id="@+id/tv_end_time"
+                        style="@style/content_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/tv_4"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:hint="请点击选择时间" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_right" />
+                </LinearLayout>
+
+                <View style="@style/style_view_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/padding_left2right"
+                    android:paddingRight="@dimen/padding_left2right">
+
+                    <TextView
+                        android:id="@+id/tv_7"
+                        style="@style/content_text"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:text="悬赏类型" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_help_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/tv_7"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rb_photo"
+                            style="@style/content_text"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@drawable/selector_radiobutton"
+                            android:text="照片" />
+
+                        <RadioButton
+                            android:id="@+id/rb_video"
+                            style="@style/content_text"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@drawable/selector_radiobutton"
+                            android:text="视频" />
+
+                        <RadioButton
+                            android:id="@+id/rb_other"
+                            style="@style/content_text"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@drawable/selector_radiobutton"
+                            android:text="其他" />
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/style_view_line" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:paddingLeft="@dimen/padding_left2right"
+                    android:paddingRight="@dimen/padding_left2right"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:id="@+id/tv_6"
+                        style="@style/content_text"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:text="悬赏事项" />
+
+                    <EditText
+                        android:id="@+id/et_note"
+                        style="@style/content_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@id/tv_6"
+                        android:background="@color/white"
+                        android:gravity="top|left"
+                        android:hint="请详细描述悬赏事项,不超过1000字"
+                        android:maxLength="1000" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_tip"
+                    style="@style/content_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="@dimen/padding_left2right"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/tv_tip_photo" />
+
+                <com.djx.pin.widget.MyRecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingLeft="@dimen/padding_left2right"
+                    android:paddingRight="@dimen/padding_left2right"
+                    android:visibility="visible"></com.djx.pin.widget.MyRecyclerView>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_updatainfo"
+                style="@style/button_background_round_full"
+                android:layout_marginLeft="@dimen/padding_left2right"
+                android:layout_marginRight="@dimen/padding_left2right"
+                android:layout_marginTop="20dp"
+                android:text="发送" />
+
+            <TextView
+                android:id="@+id/tv_help_word"
+                style="@style/text_28px_hint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_left2right"
+                android:layout_marginBottom="40dp"
+                android:linksClickable="true"
+                android:text="@string/help_word"
+                android:textColorLink="@color/blue" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

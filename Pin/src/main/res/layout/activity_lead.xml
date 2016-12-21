@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp">
+        <ImageView
+            android:id="@+id/iv_01"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:src="@mipmap/dot_select"
+            android:scaleType="centerInside"/>
+        <ImageView
+            android:id="@+id/iv_02"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:src="@mipmap/dot_normal"
+            android:scaleType="centerInside"/>
+        <ImageView
+            android:id="@+id/iv_03"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:src="@mipmap/dot_normal"
+            android:scaleType="centerInside"/>
+        <ImageView
+            android:id="@+id/iv_04"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:src="@mipmap/dot_normal"
+            android:scaleType="centerInside"/>
+    </LinearLayout>
+
+</RelativeLayout>

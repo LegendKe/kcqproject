@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:id="@+id/rl_Main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.djx.pin.activity.MainActivity">
+
+    <LinearLayout
+
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        android:id="@+id/ll_Parent_MA"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1">
+
+        </FrameLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray">
+
+        </View>
+
+        <LinearLayout
+            android:fitsSystemWindows="true"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:fitsSystemWindows="true"
+                android:layout_gravity="bottom"
+                android:id="@+id/ll_Civilization"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/im_Civilization"
+                    style="@style/style_activity_main_bottom_imageview"
+                    android:src="@mipmap/civilization_normal" />
+
+                <TextView
+                    android:id="@+id/tv_Civilization"
+                    style="@style/style_activity_main_bottom_textview"
+                    android:text="@string/tv_positive_energy" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:fitsSystemWindows="true"
+                android:layout_gravity="bottom"
+                android:id="@+id/ll_Helper"
+                style="@style/style_activity_main_bottom_linearlayou">
+
+                <ImageView
+                    android:id="@+id/im_Helper"
+                    style="@style/style_activity_main_bottom_imageview"
+                    android:src="@mipmap/helper_normal" />
+
+                <TextView
+                    android:id="@+id/tv_Helper"
+                    style="@style/style_activity_main_bottom_textview"
+                    android:text="求助" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_Helper_People"
+                style="@style/style_activity_main_bottom_linearlayou">
+
+                <ImageView
+                    android:id="@+id/im_Helper_People"
+                    style="@style/style_activity_main_bottom_imageview"
+                    android:src="@mipmap/helper_people_normal" />
+
+                <TextView
+                    android:id="@+id/tv_Helper_People"
+                    style="@style/style_activity_main_bottom_textview"
+                    android:text="帮人" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_Message"
+                style="@style/style_activity_main_bottom_linearlayou">
+
+                <ImageView
+                    android:id="@+id/im_Message"
+                    style="@style/style_activity_main_bottom_imageview"
+                    android:src="@mipmap/message_normal" />
+
+                <TextView
+                    android:id="@+id/tv_Message"
+                    style="@style/style_activity_main_bottom_textview"
+                    android:text="消息" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_Parent_Cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/text_color_black"
+        android:visibility="invisible">
+
+    </View>
+</RelativeLayout>

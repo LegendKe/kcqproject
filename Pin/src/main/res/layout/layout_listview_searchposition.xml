@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:src="@mipmap/ic_position"/>
+    <!--联想的位置-->
+    <TextView
+        android:id="@+id/tv_Position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        android:textColor="@color/text_color_black"
+        android:maxLines="1"
+        />
+    <!--联想的位置所在的市区-->
+    <TextView
+        android:id="@+id/tv_District"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_Position"
+        android:layout_toRightOf="@id/iv"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="5dp"
+        android:maxLines="1"
+      />
+
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="12dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardCornerRadius="@dimen/radius_cardview">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/space_8"
+            android:paddingBottom="@dimen/space_8"
+            android:paddingLeft="@dimen/margin_left2right"
+            android:paddingRight="@dimen/margin_left2right"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_write"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/ic_appeal"/>
+
+                <TextView
+                    android:id="@+id/tv_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/text_34px_light_black"
+                    android:text="money"
+                    android:textColor="@color/blue"
+                    android:singleLine="true"
+                    android:layout_toLeftOf="@+id/iv_write"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp"
+                    android:maxEms="16"
+                    />
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/text_32px_black"
+                    android:singleLine="true"
+                    android:layout_toLeftOf="@+id/tv_money"
+                    android:text="搬家小助手"/>
+            </RelativeLayout>
+
+           <include layout="@layout/line_layout"/>
+            <TextView
+                android:id="@+id/tv_description"
+                style="@style/text_28px_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="6"
+                android:text="内容"
+                android:layout_marginTop="5dp"
+               />
+
+            <com.djx.pin.widget.NineGridLayout
+                android:id="@+id/imgs_9grid_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                />
+
+            <ImageView
+                android:id="@+id/iv_oneimage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_200"
+                android:layout_marginTop="8dp"
+                android:scaleType="centerCrop"
+               />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

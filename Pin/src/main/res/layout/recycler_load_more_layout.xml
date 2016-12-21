@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center">
+
+    <ProgressBar
+        android:id="@+id/pb"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        style="?android:attr/progressBarStyle"
+        />
+    <TextView
+        android:id="@+id/foot_view_item_tv"
+        style="@style/textview_subtitle"
+        android:text="正在加载更多..."
+        android:layout_marginLeft="10dp"/>
+
+</LinearLayout>

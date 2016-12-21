@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="gray">#f4f4f4</color>
+    <color name="gray1">#C3C3C3</color>
+    <color name="gray2">#F2F2F2</color>
+    <color name="gray3">#F2F2F2</color>
+    <color name="gray4">#bbbbbb</color>
+    <color name="gray_background">#F4F4F4</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="black_light">#3d3d3d</color>
+
+    <color name="red">#f00</color>
+    <color name="sos_red">#f00</color>
+    <color name="red1">#FF6160</color>
+    <color name="red_light1">#FF5959</color>
+    <color name="red_light2">#FB7574</color>
+    <color name="red_light3">#AABB7574</color>
+    <!--<color name="line_color">#aaaaaa</color>-->
+    <color name="line_color">#F2F2F2</color>
+    <color name="line_color2">#C3C3C3</color>
+
+    <color name="text_color_normal">#8a8a8a</color>
+    <color name="text_color_focused">#1295f7</color>
+
+    <color name="ll_parent_cover">#7f7f7f7f</color>
+    <color name="transparent">#00000000</color>
+    <color name="text_color_blue">#ff1295f7</color>
+    <color name="blue">#ff1295F7</color>
+    <color name="text_color_background">#FFF4F4F4</color>
+    <color name="light_blue">#6593cb</color>
+    <color name="listview_line_color">#F2F2F2</color>
+    <color name="red_light">#FFFBFB</color>
+
+
+    <drawable name="red">#f00</drawable>
+    <drawable name="cyan">#ff1295f7</drawable>
+    <drawable name="gray">#ccc</drawable>
+    <drawable name="white">#fff</drawable>
+    <drawable name="black">#3d3d3d</drawable>
+
+    <color name="umeng_white">#ffffff</color>
+    <color name="umeng_blue">#1295f7</color>
+    <color name="umeng_black">#000000</color>
+
+
+
+<!--字体颜色 kcq-->
+    <color name="text_color_black">#333333</color>
+    <color name="text_color_light_black">#666666</color>
+    <color name="text_color_hint">#999999</color>
+
+
+    <!-- 下拉刷新时，颜色值 -->
+    <color name="swiperefresh_color1">#ff00ddff</color>
+    <color name="swiperefresh_color2">#ffffbb33</color>
+    <color name="swiperefresh_color3">#ffff4444</color>
+    <color name="swiperefresh_color4">#ffaa66cc</color>
+
+    <color name="line_lightgray" >#efefef</color>
+
+
+    <color name="withdraw_waiting" >#ffa95c</color>
+    <color name="withdraw_pass" >#000</color>
+    <color name="withdraw_notpass" >#f00</color>
+    <color name="withdraw_ok" >#000</color>
+
+</resources>

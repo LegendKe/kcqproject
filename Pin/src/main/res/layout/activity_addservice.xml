@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout style="@style/title">
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/padding_left2right"
+            android:paddingRight="@dimen/padding_left2right"
+            android:src="@mipmap/ic_back"
+            />
+        <TextView
+            style="@style/textview_title"
+            android:layout_centerInParent="true"
+            android:text="编辑" />
+
+        <TextView
+            android:id="@+id/tv_complete"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/padding_left2right"
+            android:paddingLeft="@dimen/padding_left2right"
+            android:text="完成" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_left2right">
+
+        <TextView
+            style="@style/textview_subtitle"
+            android:layout_width="100dp"
+            android:text="类型"
+            />
+        <EditText
+            style="@style/textview_subtitle"
+            android:id="@+id/et_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="请输入类型"
+            android:background="@null"
+            />
+    </LinearLayout>
+
+    <include layout="@layout/line_layout"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_left2right">
+
+        <TextView
+            style="@style/textview_subtitle"
+            android:layout_width="100dp"
+            android:text="服务金额"
+            />
+        <EditText
+            android:id="@+id/et_money"
+            style="@style/textview_subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="元/次"
+            android:inputType="number"
+            android:background="@null"
+            android:numeric="decimal"
+            />
+    </LinearLayout>
+
+    <include layout="@layout/line_layout"/>
+
+    <TextView
+        style="@style/textview_subtitle"
+        android:text="业务介绍"
+        android:layout_marginLeft="@dimen/padding_left2right"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:id="@+id/et_content"
+        style="@style/textview_subtitle"
+        android:hint="请输入.."
+        android:layout_width="match_parent"
+        android:background="@null"
+        android:layout_marginLeft="@dimen/padding_left2right"
+        android:layout_marginTop="8dp"
+        android:lines="4"
+        android:gravity="start"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:id="@+id/iv_01"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_addimageview"
+            />
+        <ImageView
+            android:id="@+id/iv_02"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_addimageview"
+            />
+        <ImageView
+            android:id="@+id/iv_03"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_addimageview"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray"
+        android:layout_marginTop="@dimen/padding_left2right"/>
+</LinearLayout>
